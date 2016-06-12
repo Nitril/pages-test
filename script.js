@@ -1,24 +1,14 @@
-
-    function readBody(xhr) {
-    var data;
-    if (!xhr.responseType || xhr.responseType === "text") {
-        data = xhr.responseText;
-    } else if (xhr.responseType === "document") {
-        data = xhr.responseXML;
-    } else {
-        data = xhr.response;
-    }
-    return data;
+function sprawdz() {
+	
+	var liczba = 7;
+	if (liczba>0) document.getElementById("wynik").innerHTML="dodatnia"; -->
+	else if (liczba < 0 ) document.getElementById("wynik").innerHTML="ujemna";
+	else if (liczba == 0) document.getElementById("wynik").innerHTML="zero";
+	else document.getElementById("wynik").innerHTML="To nie jest liczba cwaniaczku";
+	
+  // handle message
+};
 }
-
-var xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function() {
-    if (xhr.readyState == 4) {
-        console.log(readBody(xhr));
-    }
-}
-xhr.open('GET', 'https://github.com/', true);
-xhr.send(null);
     // document.getElementById("streamtest").innerHTML = readBody(xhr);
 
 
