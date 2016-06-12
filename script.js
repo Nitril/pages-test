@@ -44,10 +44,11 @@ xmlhttp.send();
 	function myFunction(response) {
 	var arr = JSON.parse(response);
     var out;
-    out = arr.id; 
+	var pop = strings.Replace(JSON.parse(response), `/`, ``, -1);
+    out = pop.id; 
 	
         //
-    document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
+    document.getElementById("streamtest").innerHTML = "<p>"+out+pop"</p>";
 };
 
 }
