@@ -44,13 +44,12 @@ xmlhttp.send();
     //}
     //out += "</table>";
 	function myFunction(response) {
-	var fixedresponse = response.remove(1);
-	fixedresponse = response.remove(1);	
-
+	var fixedresponse = response.replace(/\\/g,"");
+	
 	var arr = JSON.parse(fixedresponse);
 	//
     var out;
-	out = arr; 
+	out = arr.id; 
 	
         //
     document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
