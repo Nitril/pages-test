@@ -26,17 +26,9 @@ xmlhttp.send();
 function myFunction(response) {
     var arr = JSON.parse(response);
     var out; //= "<table>";
-arr = arr.replace(/\\n/g, "\\n")  
-               .replace(/\\'/g, "\\'")
-               .replace(/\\"/g, '\\"')
-               .replace(/\\&/g, "\\&")
-               .replace(/\\r/g, "\\r")
-               .replace(/\\t/g, "\\t")
-               .replace(/\\b/g, "\\b")
-               .replace(/\\f/g, "\\f");
+
 // remove non-printable and other non-valid JSON chars
-arr = arr.replace(/[\u0000-\u0019]+/g,""); 
-var o = JSON.parse(arr);
+ 
     //for(i = 0; i < arr.length; i++) {
         out = arr.id; //+
         // arr[i].City +
@@ -46,7 +38,7 @@ var o = JSON.parse(arr);
 		//;
     //}
     //out += "</table>";
-    document.getElementById("streamtest").innerHTML = "<p>"+out+o+"</p>";
+    document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
 };
 
 }
