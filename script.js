@@ -46,7 +46,7 @@ xmlhttp.send();
 	function myFunction(response) {
 	//var fixedresponse = JSON.response;
 	//yourString.Replace("\"","");
-	var arr = JSON.parse(response).stripslashes();
+	var arr = JSON.parse(JSON.stringify(response));
 	var newy = JSON.stringify(arr);
 	
     var out;
