@@ -20,7 +20,7 @@ xmlhttp.send();
 	// else if (liczba == 0) document.getElementById("streamtest").innerHTML="zero";
 	// else document.getElementById("streamtest").innerHTML="To nie jest liczba cwaniaczku";
 	
-  handle message
+  //handle message
 // };
 
 function myFunction(response) {
