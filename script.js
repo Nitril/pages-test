@@ -41,9 +41,10 @@ xmlhttp.send();
 		///;
     //}
     //out += "</table>";
-	function myFunction(arr) {
+	function myFunction(response) {
+	var arr = JSON.parse(response);
     var out;
-    out = arr; 
+    out = arr.id; 
 	
         //
     document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
