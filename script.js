@@ -44,7 +44,7 @@ xmlhttp.send();
 	function myFunction(response) {
 	var arr = JSON.parse(response);
     var out;
-	var pop = strings.Replace(JSON.parse(response), `/`, ``, -1);
+	var pop = strings.Replace(JSON.parse(response), `/`, ` `, -1);
     out = pop.id; 
 	
         //
