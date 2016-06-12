@@ -30,7 +30,7 @@ function myFunction(response) {
 // remove non-printable and other non-valid JSON chars
  
     //for(i = 0; i < arr.length; i++) {
-        out = arr.id; //+
+        out = arr[0].id; //+
         // arr[i].City +
         // "</td><td>" +
         // arr[i].Country +
