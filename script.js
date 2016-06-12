@@ -44,7 +44,7 @@ xmlhttp.send();
 	function myFunction(arr) {
     var out;
     out = arr.id; 
-        
+        //
     document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
 };
 
