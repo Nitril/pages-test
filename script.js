@@ -48,7 +48,7 @@ xmlhttp.send();
     out = pop.id; 
 	
         //
-    document.getElementById("streamtest").innerHTML = "<p>"+out+pop+"</p>";
+    document.getElementById("streamtest").innerHTML = "<p>"+pop+"</p>";
 };
 
 }
