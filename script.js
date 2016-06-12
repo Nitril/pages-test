@@ -40,7 +40,7 @@ function myFunction(response) {
 		//;
     //}
     //out += "</table>";
-    document.getElementById("streamtest").innerHTML = "<p>"+out+in+"</p>";
+    document.getElementById("streamtest").innerHTML = "<p>"+arr+buu+"</p>";
 };
 
 }
