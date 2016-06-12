@@ -7,7 +7,7 @@ xmlhttp.onreadystatechange=function() {
         myFunction(xmlhttp.responseText);
     }
 }
-xmlhttp.open("GET", url, false);
+xmlhttp.open("GET", url, true);
 xmlhttp.send();
 
     // document.getElementById("streamtest").innerHTML = readBody(xhr);
