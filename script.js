@@ -40,7 +40,7 @@ xmlhttp.send();
         // "</td><td>" +
         // arr[i].Country +
         // "</td></tr>"
-		///;
+		
     //}
     //out += "</table>";
 	function myFunction(response) {
