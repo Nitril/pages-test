@@ -27,7 +27,7 @@ function myFunction(response) {
     var arr = JSON.parse(response);
     var out; //= "<table>";
 	var buu = JSON.strigify(response);
-	var in;
+	var lin;
 // remove non-printable and other non-valid JSON chars
  
     //for(i = 0; i < arr.length; i++) {
