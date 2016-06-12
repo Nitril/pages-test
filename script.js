@@ -8,7 +8,7 @@ function sprawdz() {
 	
   // handle message
 };
-}
+
     // document.getElementById("streamtest").innerHTML = readBody(xhr);
 
 
