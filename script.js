@@ -34,14 +34,14 @@ xmlhttp.send();
 	// lin = buu.id;
 // remove non-printable and other non-valid JSON chars
  
-    //for(i = 0; i < arr.length; i++) {
+    //for(i = 0; i < arr.length; i++) 
         
         // arr[i].City +
         // "</td><td>" +
         // arr[i].Country +
         // "</td></tr>"
 		
-    //}
+    //
     //out += "</table>";
 	function myFunction(response) {
 	var fixedresponse = response.Replace("\"","");
