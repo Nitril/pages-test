@@ -40,4 +40,4 @@ function myFunction(response) {
     document.getElementById("streamtest").innerHTML = <p>out</p>;
 };
 
-};
+}
