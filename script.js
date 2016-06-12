@@ -48,7 +48,7 @@ xmlhttp.send();
 	fixedresponse = response.remove(1);	
 
 	var arr = JSON.parse(fixedresponse);
-	
+	//
     var out;
 	out = arr.id; 
 	
