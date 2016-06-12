@@ -44,7 +44,7 @@ xmlhttp.send();
     //
     //out += "</table>";
 	function myFunction(response) {
-		response = response..Replace("\"","");
+		response = response.Replace("\"","");
 	var fixedresponse = JSON.stringify(response);
 	//yourString.Replace("\"","");
 	var arr = JSON.parse(JSON.stringify(response));
