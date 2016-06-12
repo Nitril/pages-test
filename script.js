@@ -44,15 +44,16 @@ xmlhttp.send();
     //}
     //out += "</table>";
 	function myFunction(response) {
-	var fixedresponse = response.replace(/\\ /g,"");
-	
+	var fixedresponse = response.("\"","");
+	//yourString.Replace("\"","");
 	var arr = JSON.parse(fixedresponse);
 	var newy = JSON.stringify(arr);
+	
     var out;
-	out = arr[0].id; 
+	out = arr.id; 
 	
         //
-    document.getElementById("streamtest").innerHTML = "<p>"+newy+out+"</p>";
+    document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
 };
 
 }
