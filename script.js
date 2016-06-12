@@ -44,9 +44,9 @@ xmlhttp.send();
     //}
     //out += "</table>";
 	function myFunction(response) {
-	var fixedresponse = response.replace(/\\/g,"");
+	//var fixedresponse = response.replace(/\\/g,"");
 	
-	var arr = JSON.parse(fixedresponse);
+	var arr = JSON.parse(JSON.parse(fixedresponse));
 	//
     var out;
 	out = arr.id; 
