@@ -45,8 +45,8 @@ xmlhttp.send();
     var out = "";
     var i;
     for(i = 0; i < arr.length; i++) {
-        out += '<a href="' + arr[i].url + '">' + 
-        arr[i].display + '</a><br>';
+        out += arr[i].id+ 
+        arr[i].t ;
     }
     document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
 };
