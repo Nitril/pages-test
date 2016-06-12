@@ -32,7 +32,7 @@ function myFunction(response) {
  
     //for(i = 0; i < arr.length; i++) {
         out = arr[0].id; //+
-		in = buu.id;
+		lin = buu.id;
         // arr[i].City +
         // "</td><td>" +
         // arr[i].Country +
