@@ -45,7 +45,7 @@ xmlhttp.send();
     var out;
     var i;
     for(i = 0; i < arr.length; i++) {
-        out += arr[i].id+ 
+        out = arr[i].id+ 
         arr[i].t ;
     }
     document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
