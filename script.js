@@ -43,10 +43,8 @@ xmlhttp.send();
     //out += "</table>";
 	function myFunction(arr) {
     var out;
-    var i;
-    for(i = 0; i < arr.length; i++) {
-        out = arr[i].id; 
-        }
+    out = arr[i].id; 
+        
     document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
 };
 
