@@ -23,17 +23,17 @@ xmlhttp.send();
   //handle message
 // };
 
-function myFunction(response) {
-    var arr = JSON.parse(response);
-    var out; //= "<table>";
-	var buu = JSON.strigify(response);
-//	var lin;
-	var lin;
+// function myFunction(response) {
+    // var arr = JSON.parse(response);
+    // var out; //= "<table>";
+	// var buu = JSON.strigify(response);
+	// var lin;
+	// out = arr.id; //+
+	// lin = buu.id;
 // remove non-printable and other non-valid JSON chars
  
     //for(i = 0; i < arr.length; i++) {
-        out = arr.id; //+
-		lin = buu.id;
+        
         // arr[i].City +
         // "</td><td>" +
         // arr[i].Country +
@@ -41,7 +41,14 @@ function myFunction(response) {
 		//;
     //}
     //out += "</table>";
-    document.getElementById("streamtest").innerHTML = "<p>"+arr+buu+"</p>";
+	function myFunction(arr) {
+    var out = "";
+    var i;
+    for(i = 0; i < arr.length; i++) {
+        out += '<a href="' + arr[i].url + '">' + 
+        arr[i].display + '</a><br>';
+    }
+    document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
 };
 
 }
