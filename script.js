@@ -48,7 +48,7 @@ xmlhttp.send();
 	var arr = JSON.parse(fixedresponse);
 	
     var out;
-	out = pop.id; 
+	out = arr.id; 
 	
         //
     document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
