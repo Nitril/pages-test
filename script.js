@@ -1,4 +1,4 @@
-function myFunction() {
+
     function readBody(xhr) {
     var data;
     if (!xhr.responseType || xhr.responseType === "text") {
@@ -20,6 +20,6 @@ xhr.onreadystatechange = function() {
 xhr.open('GET', 'http://www.google.com', true);
 xhr.send(null);
     document.getElementById("streamtest").innerHTML = readBody(xhr);
-}
+
 
 
