@@ -4,7 +4,9 @@ var url = "http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX";
 
 xmlhttp.onreadystatechange=function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-        myFunction(xmlhttp.responseText);
+		var pops = xmlhttp.responseText;
+		
+        myFunction(pops);
     }
 }
 xmlhttp.open("GET", url, true);
@@ -42,13 +44,14 @@ xmlhttp.send();
     //}
     //out += "</table>";
 	function myFunction(response) {
-	var arr = JSON.parse(response);
+	fixedresponse = response.replace(/\\'/g, "'");
+	var arr = JSON.parse(fixedresponse);
+	
     var out;
-	var pop = strings.Replace(JSON.parse(response), `/`, ` `, -1);
-    out = pop.id; 
+	out = pop.id; 
 	
         //
-    document.getElementById("streamtest").innerHTML = "<p>"+pop+"</p>";
+    document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
 };
 
 }
