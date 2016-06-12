@@ -19,7 +19,7 @@ xhr.onreadystatechange = function() {
 }
 xhr.open('GET', 'http://www.google.com', true);
 xhr.send(null);
-    document.getElementById("streamtest").innerHTML = readBody(xhr);
+    // document.getElementById("streamtest").innerHTML = readBody(xhr);
 
 
 
