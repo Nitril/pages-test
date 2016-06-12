@@ -44,15 +44,15 @@ xmlhttp.send();
     //}
     //out += "</table>";
 	function myFunction(response) {
-	//var fixedresponse = response.replace(/\\/g,"");
+	var fixedresponse = response.replace(/\\ /g,"");
 	
-	var arr = JSON.parse(response).remove(1);
-	//
+	var arr = JSON.parse(fixedresponse);
+	var newy = JSON.stringify(arr);
     var out;
-	out = arr.id; 
+	out = arr[0].id; 
 	
         //
-    document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
+    document.getElementById("streamtest").innerHTML = "<p>"+newy+out+"</p>";
 };
 
 }
