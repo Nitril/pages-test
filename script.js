@@ -42,7 +42,7 @@ xmlhttp.send();
     //}
     //out += "</table>";
 	function myFunction(arr) {
-    var out = "";
+    var out;
     var i;
     for(i = 0; i < arr.length; i++) {
         out += arr[i].id+ 
