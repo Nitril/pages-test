@@ -1,7 +1,7 @@
 function sprawdz() {
 	
 	var liczba = 7;
-	if (liczba>0) document.getElementById("streamtest").innerHTML=document.write("<p>FASC 4</p>");
+	if (liczba>0) document.getElementById("streamtest").innerHTML="<p>FASC 4</p>";
 	else if (liczba < 0 ) document.getElementById("streamtest").innerHTML="ujemna";
 	else if (liczba == 0) document.getElementById("streamtest").innerHTML="zero";
 	else document.getElementById("streamtest").innerHTML="To nie jest liczba cwaniaczku";
