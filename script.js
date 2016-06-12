@@ -14,12 +14,12 @@
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
     if (xhr.readyState == 4) {
-        console.log(readBody(xhr));
+        document.getElementById("streamtest").innerHTML = document.write(readBody(xhr));
     }
 }
 xhr.open('GET', 'https://github.com/', true);
 xhr.send(null);
-    // document.getElementById("streamtest").innerHTML = readBody(xhr);
+     
 
 
 
