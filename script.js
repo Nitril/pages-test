@@ -7,7 +7,7 @@ xmlhttp.onreadystatechange=function() {
         myFunction(xmlhttp.responseText);
     }
 }
-xmlhttp.open("GET", url, true);
+xmlhttp.open("GET", url, false);
 xmlhttp.send();
 
     // document.getElementById("streamtest").innerHTML = readBody(xhr);
@@ -25,7 +25,6 @@ xmlhttp.send();
 
 function myFunction(response) {
     var arr = JSON.parse(response);
-    var i;
     var out; //= "<table>";
 
     //for(i = 0; i < arr.length; i++) {
@@ -37,7 +36,7 @@ function myFunction(response) {
 		//;
     //}
     //out += "</table>";
-    document.getElementById("streamtest").innerHTML = <p>out</p>;
+    document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
 };
 
 }
