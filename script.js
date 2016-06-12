@@ -50,7 +50,7 @@ xmlhttp.send();
 	var arr = JSON.parse(fixedresponse);
 	//
     var out;
-	out = arr.id; 
+	out = arr; 
 	
         //
     document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
