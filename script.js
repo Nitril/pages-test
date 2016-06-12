@@ -39,5 +39,5 @@ function myFunction(response) {
 		;
     }
     out += "</table>";
-    document.getElementById("streamtest").innerHTML = out;
+    document.getElementById("streamtest").innerHTML = <p>out</p>;
 }
