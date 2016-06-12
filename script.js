@@ -29,9 +29,7 @@ function myFunction(response) {
     var out = "<table>";
 
     for(i = 0; i < arr.length; i++) {
-        out += "<tr><td>" +
-        arr[i].id +
-         "</td><td>" //+
+        out += arr.id //+
         // arr[i].City +
         // "</td><td>" +
         // arr[i].Country +
