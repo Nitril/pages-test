@@ -38,12 +38,13 @@ xmlhttp.send();
         // "</td><td>" +
         // arr[i].Country +
         // "</td></tr>"
-		//;
+		///;
     //}
     //out += "</table>";
 	function myFunction(arr) {
     var out;
-    out = arr.id; 
+    out = arr; 
+	
         //
     document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
 };
