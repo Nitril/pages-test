@@ -17,7 +17,7 @@ xhr.onreadystatechange = function() {
         console.log(readBody(xhr));
     }
 }
-xhr.open('GET', 'http://www.google.com', true);
+xhr.open('GET', 'https://github.com/', true);
 xhr.send(null);
     // document.getElementById("streamtest").innerHTML = readBody(xhr);
 
