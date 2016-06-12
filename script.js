@@ -4,9 +4,9 @@ var url = "http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX";
 
 xmlhttp.onreadystatechange=function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-		var pops = xmlhttp.responseText;
 		
-        myFunction(pops);
+		
+        myFunction(xmlhttp.responseText);
     }
 }
 xmlhttp.open("GET", url, true);
