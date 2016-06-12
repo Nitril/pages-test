@@ -24,7 +24,7 @@ xmlhttp.send();
 // };
 
 function myFunction(response) {
-    var arr = JSON.stringify(response);
+    var arr = JSON.parse(response);
     var out; //= "<table>";
 
 // remove non-printable and other non-valid JSON chars
