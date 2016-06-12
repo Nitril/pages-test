@@ -47,7 +47,7 @@ xmlhttp.send();
 	var fixedresponse = JSON.stringify(response).Replace("\"","");
 	//yourString.Replace("\"","");
 	var arr = JSON.parse(JSON.stringify(response));
-	var newy = JSON.stringify(fixedresponse);
+	var newy = JSON.parse(fixedresponse);
 	
     var out;
 	out = arr.id; 
