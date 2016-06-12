@@ -1,16 +1,25 @@
 function myFunction() {
-    var x, text;
-
-    // Get the value of the input field with id="numb"
-    x = document.getElementById("numb").value;
-
-    // If x is Not a Number or less than one or greater than 10
-    if (isNaN(x) || x < 1 || x > 10) {
-        text = "Input not valid";
+    function readBody(xhr) {
+    var data;
+    if (!xhr.responseType || xhr.responseType === "text") {
+        data = xhr.responseText;
+    } else if (xhr.responseType === "document") {
+        data = xhr.responseXML;
     } else {
-        text = "Input OK";
+        data = xhr.response;
     }
-    document.getElementById("demo").innerHTML = text;
+    return data;
+}
+
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4) {
+        console.log(readBody(xhr));
+    }
+}
+xhr.open('GET', 'http://www.google.com', true);
+xhr.send(null);
+    document.getElementById("streamtest").innerHTML = readBody(xhr);
 }
 
 
