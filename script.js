@@ -34,11 +34,11 @@ xmlhttp.send();
 	//var newy = JSON.parse(fixedresponse);
 	//
     var out;
-	out = fixedresponse.id; 
+	out = fixedresponse[0].id; 
 	// var out1 = newy.id;
 	
         
-    document.getElementById("streamtest").innerHTML = "<p>"+fixedresponse+out+"</p>";
+    document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
 };
 
 }
