@@ -33,12 +33,12 @@ xmlhttp.send();
 	
 	//var newy = JSON.parse(fixedresponse);
 	//
-    // var out;
-	// out = arr.id; 
+    var out;
+	out = fixedresponse.id; 
 	// var out1 = newy.id;
 	
         //
-    document.getElementById("streamtest").innerHTML = "<p>"+fixedresponse+"</p>";
+    document.getElementById("streamtest").innerHTML = "<p>"+fixedresponse+out+"</p>";
 };
 
 }
