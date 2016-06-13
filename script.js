@@ -44,10 +44,9 @@ xmlhttp.send();
     //
     //out += "</table>";
 	function myFunction(response) {
-		response = response.stripslashes();;
-	var fixedresponse = JSON.stringify(response);
+	var fixedresponse = JSON.stringify(response).substring(0,2);
 	//yourString.Replace("\"","");
-	var arr = JSON.parse(JSON.stringify(response));
+	
 	var newy = JSON.parse(fixedresponse);
 	
     var out;
@@ -55,7 +54,7 @@ xmlhttp.send();
 	var out1 = newy.id;
 	
         //
-    document.getElementById("streamtest").innerHTML = "<p>"+out+out1+"</p>";
+    document.getElementById("streamtest").innerHTML = "<p>"+out+out1+fixedresponse+newy+"</p>";
 };
 
 }
