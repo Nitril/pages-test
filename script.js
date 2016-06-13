@@ -34,7 +34,7 @@ xmlhttp.send();
 	//var newy = JSON.parse(fixedresponse);
 	//
     var out;
-	out = [fixedresponse[0].id, fixedresponse[0].e, fixedresponse[0].e ]
+	out = [fixedresponse[0].id, fixedresponse[0].f, fixedresponse[0].e ];
 	
 	// var out1 = newy.id;
 	
