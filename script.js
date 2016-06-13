@@ -49,12 +49,12 @@ xmlhttp.send();
 	
 	var newy = JSON.parse(fixedresponse);
 	
-    var out;
-	out = arr.id; 
-	var out1 = newy.id;
+    // var out;
+	// out = arr.id; 
+	// var out1 = newy.id;
 	
         //
-    document.getElementById("streamtest").innerHTML = "<p>"+out+out1+fixedresponse+newy+"</p>";
+    document.getElementById("streamtest").innerHTML = "<p>"+newy+"</p>";
 };
 
 }
