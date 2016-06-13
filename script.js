@@ -49,7 +49,7 @@ xmlhttp.send();
 	//yourString.Replace("\"","");
 	
 	//var newy = JSON.parse(fixedresponse);
-	
+	//
     // var out;
 	// out = arr.id; 
 	// var out1 = newy.id;
