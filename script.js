@@ -38,7 +38,7 @@ xmlhttp.send();
 	
 	// var out1 = newy.id;
 	
-        
+        //
     document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
 };
 
