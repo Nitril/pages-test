@@ -25,24 +25,7 @@ xmlhttp.send();
   //handle message
 // };
 
-// function myFunction(response) {
-    // var arr = JSON.parse(response);
-    // var out; //= "<table>";
-	// var buu = JSON.strigify(response);
-	// var lin;
-	// out = arr.id; //+
-	// lin = buu.id;
-// remove non-printable and other non-valid JSON chars
- 
-    //for(i = 0; i < arr.length; i++) 
-        
-        // arr[i].City +
-        // "</td><td>" +
-        // arr[i].Country +
-        // "</td></tr>"
-		
-    //
-    //out += "</table>";
+
 	function myFunction(response) {
 	
 	var fixedresponse = JSON.parse(response.replace("//",""));
