@@ -30,15 +30,30 @@ xmlhttp.send();
 	
 	var fixedresponse = JSON.parse(response.replace("//",""));
 	//yourString.Replace("\"","");
-	
+	var stringresponse = JSON.stringify(fixedresponse);
 	//var newy = JSON.parse(fixedresponse);
 	//
-    var out;
+    // var out = "<table>";
 	out = [fixedresponse[0].id, fixedresponse[0].f, fixedresponse[0].e ];
+	// for (var k=0 : fixedresponse[k]) {
+		
+	// }
 	
+
+    // for(i = 0; i < arr.length; i++) {
+        // out += "<tr><td>" +
+        // arr[i].Name +
+        // "</td><td>" +
+        // arr[i].City +
+        // "</td><td>" +
+        // arr[i].Country +
+        // "</td></tr>";
+    // }
+    // out += "</table>";
+    // document.getElementById("id01").innerHTML = out;
 	// var out1 = newy.id;
 	
         //
-    document.getElementById("streamtest").innerHTML = "<p>"+out+"</p>";
+    document.getElementById("streamtest").innerHTML =stringresponse;
 };
 
