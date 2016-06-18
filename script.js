@@ -55,5 +55,5 @@ xmlhttp.send();
 	
         //
     document.getElementById("streamtest").innerHTML ="<table>"+stringresponse+fixedresponse+"</table>";
-};
+}
 
