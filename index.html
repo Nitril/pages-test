@@ -9,6 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://rawgit.com/nitril/pages-test/gh-pages/script.js"></script>
+  <script type="text/javascript" src="path/to/source/HumbleFinance.js"></script>
 </head>
 <body>
    <header class="container">
@@ -65,8 +66,10 @@
   <div class="col-md-4">wykres3321</div>
 </div>       
 </div>
-    <div class="row">
-  <div  class="col-md-12"></div>
+<div  class="row">
+
+		
+		<div  class="col-md-12"></div>
 </div>
 <div class="row">
   <div class="col-md-4">
@@ -74,7 +77,23 @@
   <div class="col-md-4">wykres123res 5321</div>
   <div class="col-md-4">wykres123ykres 6321</div>
 </div>
- <footer class="container">
+
+  <div id="labels">
+    <div id="financeTitle">NASDAQ:GOOG</div>
+    <div id="time">
+      <a onclick="HumbleFinance.zoom(5);">1w</a>
+      <a onclick="HumbleFinance.zoom(21);">1m</a>
+      <a onclick="HumbleFinance.zoom(65);">3m</a>
+      <a onclick="HumbleFinance.zoom(127);">6m</a>
+      <a onclick="HumbleFinance.zoom(254);">1y</a>
+      <a onclick="HumbleFinance.zoom(1265);">5y</a>
+    </div>
+    <div id="dateRange"></div>
+  </div>
+</div>
+
+
+<footer class="container">
     <div class="row">
       <p class="col-sm-4">&copy; 2016 Nitril</p>
       <ul class="col-sm-8">
