@@ -30,11 +30,11 @@ xmlhttp.send();
 	
 	var fixedresponse = JSON.parse(response.replace("//",""));
 	//yourString.Replace("\"","");
-	var stringresponse = JSON.stringify(fixedresponse);
+	var stringresponse = JSON.stringify(response.replace("//",""));
 	//var newy = JSON.parse(fixedresponse);
 	//
     // var out = "<table>";
-	out = [fixedresponse[0].id, fixedresponse[0].f, fixedresponse[0].e ];
+	//out = [fixedresponse[0].id, fixedresponse[0].f, fixedresponse[0].e ];
 	// for (var k=0 : fixedresponse[k]) {
 		
 	// }
@@ -54,6 +54,6 @@ xmlhttp.send();
 	// var out1 = newy.id;
 	
         //
-    document.getElementById("streamtest").innerHTML =stringresponse;
+    document.getElementById("streamtest").innerHTML ='<table>'+stringresponse+'</table>';
 };
 
