@@ -33,11 +33,13 @@ $.ajax({
         timeout:    20000,
         dataType:   "text",
         error:      function(XMLHttpRequest, textStatus, errorThrown) { console.log(textStatus); },
-        success:    function(data) {alert("done"+data); var z = data.replace(/\\/g, "")  },
+        success:    function(data) { alert("done"+data);
+									 $("#streamtest").append(data.replace(/\\/g, "") + " ");
+									}
         cache:      false
     });
-});]
-$("#streamtest").append(z + " ");
+});
+
 
 
 // function sprawdz() {
