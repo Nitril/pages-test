@@ -33,13 +33,13 @@ $.ajax({
         timeout:    20000,
         dataType:   "text",
         error:      function(XMLHttpRequest, textStatus, errorThrown) { console.log(textStatus); },
-        success:    function(data) {alert("done"+data); 
-										
-												
-									},
+        success:    function(data) {alert("done"+data); var z = data.replace(/\\/g, "")  },
         cache:      false
     });
-});
+});]
+$("#streamtest").append(z + " ");
+
+
 // function sprawdz() {
 // var xmlhttp = new XMLHttpRequest();
 // var url = "http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX";
