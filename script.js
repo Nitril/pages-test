@@ -1,4 +1,4 @@
-// $(document).ready(function(){
+$(document).ready(function(){
     // $("button").click(function(){
         
 		// $.ajax({
@@ -21,9 +21,9 @@
 			
             });
         });
-    // });
+    // 
 	
-// });
+
 
 $.ajax({
         type:       "GET",
@@ -35,7 +35,7 @@ $.ajax({
         success:    function(data) {console.log("done"+data); },
         cache:      false
     });
-
+});
 // function sprawdz() {
 // var xmlhttp = new XMLHttpRequest();
 // var url = "http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX";
