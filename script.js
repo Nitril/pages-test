@@ -26,13 +26,17 @@ $(document).ready(function(){
 
 
 $.ajax({
+	
         type:       "GET",
         url:        'http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX',
         data:       function(data) { console.log("data="+data); },
         timeout:    20000,
         dataType:   "text",
         error:      function(XMLHttpRequest, textStatus, errorThrown) { console.log(textStatus); },
-        success:    function(data) {console.log("done"+data); },
+        success:    function(data) {alert("done"+data); 
+										
+												
+									},
         cache:      false
     });
 });
