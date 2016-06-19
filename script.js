@@ -10,7 +10,7 @@ $(document).ready(function(){
             },
              error: function() {
                 $("div").append("error");
-                alert('error');
+                alert(data);
             }
         });
 		// $.getJSON("http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX", function(result){
