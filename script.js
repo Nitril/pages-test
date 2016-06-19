@@ -6,7 +6,7 @@ $(document).ready(function(){
             dataType: 'json',
             success: function(data) {
 				
-                $("div").append('all good');
+                $("div").append("all good");
                 alert(data.replace(/\\/g, ""));
             },
              error: function() {
