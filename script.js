@@ -4,10 +4,11 @@ $(document).ready(function(){
             $.each(result, function(i, field){
 				
             $("div").append(field + " ");
-			alert(JSON.stringify(field));
+			
             });
         });
     });
+	alert(JSON.stringify(result));
 });
 
 
