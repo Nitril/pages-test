@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("button").click(function(){
-        $.getJSON("http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX", function(result){
+        $.getJSON("http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX", function(result.Replace("\"","")){
             $.each(result, function(i, field){
             $("#streamtest").append(field + " ");
             });
