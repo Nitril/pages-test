@@ -35,7 +35,7 @@ $.ajax({
         error:      function(XMLHttpRequest, textStatus, errorThrown) { console.log(textStatus); },
         success:    function(data) { alert("done"+data);
 									 $("#streamtest").append(data.replace(/\\/g, "") + " ");
-									}
+									},
         cache:      false
     });
 });
