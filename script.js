@@ -1,8 +1,9 @@
 $(document).ready(function(){
     $("button").click(function(){
-        $.getJSON("http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX", function(result.Replace("\"","")){
+        $.getJSON("http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX", function(result){
             $.each(result, function(i, field){
-            $("#streamtest").append(field + " ");
+				
+            $("div").append(field + " ");
             });
         });
     });
