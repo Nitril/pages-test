@@ -4,10 +4,10 @@ $(document).ready(function(){
 		$.ajax({
             url: 'http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX',
             dataType: 'json',
-            success: function(data ) {
-				data = data.replace(/\\/g, "");
+            success: function(data) {
+				
                 $("div").append('all good');
-                alert(data);
+                alert(data.replace(/\\/g, ""));
             },
              error: function() {
                 $("div").append("error");
