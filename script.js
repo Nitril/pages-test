@@ -14,13 +14,13 @@ $(document).ready(function(){
                 // alert("error");
             // }
         // });
-		$.getJSON("http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX", function(result){
-            $.each(result, function(i, field){
-			alert(JSON.stringify(result));	
-            $("div").append(field + " ");
+		// $.getJSON("http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX", function(result){
+            // $.each(result, function(i, field){
+			// alert(JSON.stringify(result));	
+            // $("div").append(field + " ");
 			
-            });
-        });
+            // });
+        // });
     // 
 	
 
