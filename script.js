@@ -1,12 +1,25 @@
 $(document).ready(function(){
     $("button").click(function(){
-        $.getJSON("http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX", function(result){
-            $.each(result, function(i, field){
-			alert(JSON.stringify(result));	
-            $("div").append(field + " ");
-			
-            });
+        
+		$.ajax({
+            url: 'http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX',
+            dataType: 'json',
+            success: function(data) {
+                $("div").append('all good');
+                alert(data);
+            },
+             error: function() {
+                $("div").append("error");
+                alert('error');
+            }
         });
+		// $.getJSON("http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX", function(result){
+            // $.each(result, function(i, field){
+			// alert(JSON.stringify(result));	
+            // $("div").append(field + " ");
+			
+            // });
+        // });
     });
 	
 });
