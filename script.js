@@ -1,31 +1,40 @@
-$(document).ready(function(){
-    $("button").click(function(){
+// $(document).ready(function(){
+    // $("button").click(function(){
         
-		$.ajax({
-            url: 'http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX',
-            dataType: 'json',
-            success: function(data) {
+		// $.ajax({
+            // url: 'http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX',
+            // dataType: 'json',
+            // success: function(data) {
 				
-                $("div").append("all good");
-                alert(data.replace(/\\/g, ""));
-            },
-             error: function() {
-                $("div").append("error");
-                alert("error");
-            }
-        });
-		// $.getJSON("http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX", function(result){
-            // $.each(result, function(i, field){
-			// alert(JSON.stringify(result));	
-            // $("div").append(field + " ");
-			
-            // });
+                // $("div").append("all good");
+                // alert(data.replace(/\\/g, ""));
+            // },
+             // error: function() {
+                // $("div").append("error");
+                // alert("error");
+            // }
         // });
-    });
+		$.getJSON("http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX", function(result){
+            $.each(result, function(i, field){
+			alert(JSON.stringify(result));	
+            $("div").append(field + " ");
+			
+            });
+        });
+    // });
 	
-});
+// });
 
-
+$.ajax({
+        type:       "GET",
+        url:        'http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX',
+        data:       function(data) { console.log("data="+data); },
+        timeout:    20000,
+        dataType:   "text",
+        error:      function(XMLHttpRequest, textStatus, errorThrown) { console.log(textStatus); },
+        success:    function(data) {console.log("done"+data); },
+        cache:      false
+    });
 
 // function sprawdz() {
 // var xmlhttp = new XMLHttpRequest();
