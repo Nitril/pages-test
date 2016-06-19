@@ -2,7 +2,7 @@ $(document).ready(function(){
     $("button").click(function(){
         $.getJSON("http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX", function(result){
             $.each(result, function(i, field){
-            $("div").append(field + " ");
+            $("#streamtest").append(field + " ");
             });
         });
     });
