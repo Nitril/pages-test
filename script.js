@@ -59,7 +59,7 @@ console.log(xhr.status);
 console.log(xhr.statusText);
 alert(xhr.status);
 }
-return;
+
 
 // xmlhttp.onreadystatechange=function() {
     // if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
