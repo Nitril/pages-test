@@ -54,7 +54,7 @@ function sprawdz() {
 
 var apikey = "7djtrck735sj9vj9kmtdkyxdaqvqm9f9";
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://eu.api.battle.net/wow/character/Kazzak/Atrophie?locale=en_GB&apikey=7djtrck735sj9vj9kmtdkyxdaqvqm9f9", false);
+xhr.open("GET", "https://eu.api.battle.net/wow/character/Kazzak/Atrophie?fields=reputation&locale=en_GB&apikey=7djtrck735sj9vj9kmtdkyxdaqvqm9f9", false);
 xhr.send();
 
 console.log(xhr.status);
