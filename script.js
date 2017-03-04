@@ -50,9 +50,15 @@ alert(xhr.status);
 
 
 
-// function sprawdz() {
-// var xmlhttp = new XMLHttpRequest();
-// var url = "http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX";
+function sprawdz() {
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://www.codecademy.com/", false);
+xhr.send();
+
+console.log(xhr.status);
+console.log(xhr.statusText);
+alert(xhr.status);
+}
 
 // xmlhttp.onreadystatechange=function() {
     // if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
