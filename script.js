@@ -60,6 +60,7 @@ xhr.send();
 console.log(xhr.status);
 console.log(xhr.statusText);
 alert(xhr.response);
+console.log(xhr.response);
 }
 
 
