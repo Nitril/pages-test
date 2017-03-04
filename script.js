@@ -54,12 +54,12 @@ function sprawdz() {
 
 var apikey = "7djtrck735sj9vj9kmtdkyxdaqvqm9f9";
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://EU.api.battle.net/wow/character/<Kazzak>/<Atrophie>?fields=petSlots,pets&apikey=<7djtrck735sj9vj9kmtdkyxdaqvqm9f9>&jsonp=<function>", false);
+xhr.open("GET", "https://eu.api.battle.net/wow/character/Kazzak/Atrophie?locale=en_GB&apikey=7djtrck735sj9vj9kmtdkyxdaqvqm9f9", false);
 xhr.send();
 
 console.log(xhr.status);
 console.log(xhr.statusText);
-alert(xhr.status);
+alert(xhr.response);
 }
 
 
