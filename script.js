@@ -51,8 +51,10 @@
 
 
 function sprawdz() {
+
+var apikey = "7djtrck735sj9vj9kmtdkyxdaqvqm9f9";
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://www.codecademy.com/", false);
+xhr.open("GET", "https://EU.api.battle.net/wow/character/<Kazzak>/<Atrophie>?fields=petSlots,pets&apikey=<7djtrck735sj9vj9kmtdkyxdaqvqm9f9>&jsonp=<function>", false);
 xhr.send();
 
 console.log(xhr.status);
