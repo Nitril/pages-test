@@ -1,10 +1,10 @@
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://www.codecademy.com/", false);
-xhr.send();
+// var xhr = new XMLHttpRequest();
+// xhr.open("GET", "https://www.codecademy.com/", false);
+// xhr.send();
 
-console.log(xhr.status);
-console.log(xhr.statusText);
-alert(xhr.status);
+// console.log(xhr.status);
+// console.log(xhr.statusText);
+// alert(xhr.status);
 //$(document).ready(function(){
     // $("button").click(function(){
         
@@ -59,6 +59,7 @@ console.log(xhr.status);
 console.log(xhr.statusText);
 alert(xhr.status);
 }
+return;
 
 // xmlhttp.onreadystatechange=function() {
     // if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
