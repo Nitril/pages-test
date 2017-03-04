@@ -1,5 +1,11 @@
-<<<<<<< HEAD
-$(document).ready(function(){
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://www.codecademy.com/", false);
+xhr.send();
+
+console.log(xhr.status);
+console.log(xhr.statusText);
+alert(xhr.status);
+//$(document).ready(function(){
     // $("button").click(function(){
         
 		// $.ajax({
@@ -26,21 +32,21 @@ $(document).ready(function(){
 	
 
 
-$.ajax({
+// $.ajax({
 	
-        type:       "GET",
-        url:        'http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX',
-        data:       function(data) { console.log("data="+data); },
-        timeout:    20000,
-        dataType:   "text",
-        error:      function(XMLHttpRequest, textStatus, errorThrown) { console.log(textStatus); },
-        success:    function(data) { alert("done"+data);
-									 $("#streamtest").append(data.replace(/\\/g, "") + " ");
-									 return data;
-									},
-        cache:      false
-    });
-});
+//         type:       "GET",
+//         url:        'http://finance.google.com/finance/info?client=ig&q=INDEXNASDAQ:NDX',
+//         data:       function(data) { console.log("data="+data); },
+//         timeout:    20000,
+//         dataType:   "text",
+//         error:      function(XMLHttpRequest, textStatus, errorThrown) { console.log(textStatus); },
+//         success:    function(data) { alert("done"+data);
+// 									 $("#streamtest").append(data.replace(/\\/g, "") + " ");
+// 									 return data;
+// 									},
+//         cache:      false
+//     });
+// });
 
 
 
@@ -103,30 +109,3 @@ $.ajax({
     // document.getElementById("streamtest").innerHTML ="<table>"+stringresponse+fixedresponse+"</table>";
 // }
 
-=======
-
-    function readBody(xhr) {
-    var data;
-    if (!xhr.responseType || xhr.responseType === "text") {
-        data = xhr.responseText;
-    } else if (xhr.responseType === "document") {
-        data = xhr.responseXML;
-    } else {
-        data = xhr.response;
-    }
-    return data;
-}
-
-var xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function() {
-    if (xhr.readyState == 4) {
-        document.getElementById("streamtest").innerHTML = document.write(readBody(xhr));
-    }
-}
-xhr.open('GET', 'https://github.com/', true);
-xhr.send(null);
-     
-
-
-
->>>>>>> refs/remotes/origin/master
