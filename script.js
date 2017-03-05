@@ -32,5 +32,5 @@ console.log(xhr.response);
 }
 
 
- mydiv = document.getElementById("myDiv")
+ mydiv = document.getElementById("myDiv");
  mydiv.addEventListener("click", sprawdz, false);
