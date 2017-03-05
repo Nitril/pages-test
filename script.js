@@ -17,7 +17,7 @@ const apikey = "7djtrck735sj9vj9kmtdkyxdaqvqm9f9";
 var chlink =  "https://eu.api.battle.net/wow/auction/data/"+realm+ "?locale=en_GB&apikey="+apikey;
 
   
-var sprawdz = function () {
+sprawdz = function () {
 
 var xhr = new XMLHttpRequest();
 
