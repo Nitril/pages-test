@@ -34,6 +34,6 @@ alert(xhr.response);
 console.log(xhr.response);
 
 
-}
+};
 
 
