@@ -6,7 +6,7 @@
 // console.log(xhr.statusText);
 // alert(xhr.status);
 
-$('#myDiv').click(sprawdz());
+
 
 var realm = "Kazzak"
 var character_name = "Atrophie"
@@ -31,3 +31,4 @@ console.log(xhr.response);
 }
 
 
+$('#myDiv').click(sprawdz());
