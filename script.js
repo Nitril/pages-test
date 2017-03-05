@@ -18,7 +18,7 @@ var chlink =  "https://eu.api.battle.net/wow/auction/data/"+realm+ "?locale=en_G
 
   
 
-$('#myBtn').click(sprawdz = function() {
+$('#myBtn').click(sprawdz() {
 var xhr = new XMLHttpRequest();
 
 xhr.open("GET",chlink , false);
