@@ -30,27 +30,3 @@ console.log(xhr.response);
 }
 
 
-// xmlhttp.onreadystatechange=function() {
-    // if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-		
-		
-        // myFunction(xmlhttp.responseText);
-    // }
-// }
-// xmlhttp.open("GET", url, true);
-// xmlhttp.send();
-
-    // document.getElementById("streamtest").innerHTML = readBody(xhr);
-
-// function sprawdz() {
-	
-	// var liczba = 7;
-	// if (liczba>0) document.getElementById("streamtest").innerHTML="<p>FASC 4</p>";
-	// else if (liczba < 0 ) document.getElementById("streamtest").innerHTML="ujemna";
-	// else if (liczba == 0) document.getElementById("streamtest").innerHTML="zero";
-	// else document.getElementById("streamtest").innerHTML="To nie jest liczba cwaniaczku";
-	
-  // handle message
-// };
-
-
