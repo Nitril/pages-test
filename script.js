@@ -8,8 +8,7 @@
 
 
 
-$( document ).ready(function() {
-    console.log( "ready!" );
+
 
 var realm = "Kazzak"
 var character_name = "Atrophie"
@@ -22,7 +21,7 @@ mydiv = document.getElementById("myBtn");
     
  mydiv.addEventListener("click", sprawdz, false);
 };
-function sprawdz() {
+sprawdz = function () {
 
 var xhr = new XMLHttpRequest();
 
@@ -39,4 +38,3 @@ console.log(xhr.response);
 };
 $('#myBtn').click(sprawdz());
 
-});
