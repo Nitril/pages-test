@@ -6,7 +6,8 @@
 // console.log(xhr.statusText);
 // alert(xhr.status);
 
-
+//$('#myDiv').click(sprawdz());
+document.getElementById ("myDiv").addEventListener ("click", sprawdz, false);
 
 var realm = "Kazzak"
 var character_name = "Atrophie"
@@ -31,4 +32,3 @@ console.log(xhr.response);
 }
 
 
-$('#myDiv').click(sprawdz());
