@@ -32,7 +32,7 @@ console.log(xhr.response);
 alert('clicked');
 
 };
-$('#myBtn').click(sprawdz);
+$('#myBtn').click(sprawdz());
 // if (mydiv) { 
     
 //  mydiv.addEventListener("click", sprawdz, false);
