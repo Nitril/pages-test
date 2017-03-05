@@ -6,7 +6,7 @@
 // console.log(xhr.statusText);
 // alert(xhr.status);
 
-$('#myDiv').click(sprawdz());
+
 
 
 var realm = "Kazzak"
