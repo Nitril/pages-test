@@ -1,35 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Stock Analyser v.01</title>
+  <title>FASC v.01</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
+  <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://rawgit.com/nitril/pages-test/gh-pages/script.js"></script>
+  
+=======
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+>>>>>>> master
 </head>
 <body>
-  
-<div class="container-fluid">
-  <h1>Test Contentu1123123</h1>
-  <p>This part is inside a .container class.</p> 
-  <p>The .container class provides a responsive fixed width container.</p>    
+   <header class="container">
     <div class="row">
-  <div class="col-md-12"></div>
+      <h1 class="col-sm-8">FASC</h1>
+      <nav class="col-sm-4">
+        <p>newest</p>
+        <p>catalogue</p>
+        <p>contact</p>
+      </nav>
+    </div>
+ </header>
+ <section class="jumbotron">
+    <div class="container">
+    <form id="frm1">
+  Realm: <input type="text" name="realm" value="Kazzak"><br>
+  Character Name: <input type="text" name="character_name" value="Atrophie"><br><br>
+    </form>
+      <div class="row text-center">
+        <h2>FASC</h2>
+        <h3>Most Predictable</h3>
+        <a class="btn btn-primary" onclick="sprawdz()">View All Options</a>
+      </div>
+    </div>
+ </section>
+ 
+
+		
+		<div  class="col-md-12"></div>
 </div>
 <div class="row">
-  <div class="col-md-4">wykres1231</div>
-  <div class="col-md-4">wykres2231</div>
-  <div class="col-md-4">wykres3321</div>
-</div>       
-</div>
-    <div class="row">
-  <div class="col-md-12">opis i content3213</div>
-</div>
-<div class="row">
-  <div class="col-md-4">ykres123s 4312</div>
+  <div class="col-md-4">
+  <a class="btn btn-primary" onclick="sprawdz()">See all</a></div>
   <div class="col-md-4">wykres123res 5321</div>
   <div class="col-md-4">wykres123ykres 6321</div>
 </div>
+<div class="container">
+   <img class="loader" src="assets/loader.GIF" alt="loading...">
+   <div class="holder"></div>
+</div>
+  
+
+
+<footer class="container">
+    <div class="row">
+      <p class="col-sm-4">&copy; 2016 Nitril</p>
+      <ul class="col-sm-8">
+        <li class="col-sm-1">
+          <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg">
+        </li>
+        <li class="col-sm-1">
+          <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg">
+        </li>
+        <li class="col-sm-1">
+          <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg">
+        </li>
+        <li class="col-sm-1">
+          <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/medium.svg">
+        </li>
+      </ul>
+    </div>
+</footer>
+
 </body>
 </html>
