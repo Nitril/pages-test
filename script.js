@@ -53,10 +53,12 @@
 function sprawdz() {
 
 var apikey = "7djtrck735sj9vj9kmtdkyxdaqvqm9f9";
+var link = "https://eu.api.battle.net/wow/character/"+realm+ "/"+character_name+"?fields=reputation&locale=en_GB&apikey="+apikey+";
 var x = document.getElementById("frm1");
 var xhr = new XMLHttpRequest();
+var character_name = 
 
-xhr.open("GET", "https://eu.api.battle.net/wow/character/"+x.realm+ "/"+x.character name+"?fields=reputation&locale=en_GB&apikey="+apikey+", false);
+xhr.open("GET",link , false);
 
 xhr.send();
 
