@@ -38,4 +38,4 @@ alert('clicked');
 };
 $('#myBtn').click(sprawdz());
 
-};
+}
