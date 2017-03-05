@@ -14,9 +14,7 @@ var chlink =  "https://eu.api.battle.net/wow/auction/data/"+realm+ "/"+character
 
 function sprawdz() {
 
-var x = document.getElementById("frm1");
 var xhr = new XMLHttpRequest();
-var character_name = 
 
 xhr.open("GET",chlink , false);
 
