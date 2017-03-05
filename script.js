@@ -6,7 +6,7 @@
 // console.log(xhr.statusText);
 // alert(xhr.status);
 
-//$('#myDiv').click(sprawdz());
+$('#myDiv').click(sprawdz());
 
 
 var realm = "Kazzak"
@@ -32,4 +32,5 @@ console.log(xhr.response);
 }
 
 
-document.getElementById("myDiv").addEventListener("click", function(){sprawdz}, false);
+ mydiv = document.getElementById("myDiv")
+ mydiv.addEventListener("click", sprawdz(), false);
