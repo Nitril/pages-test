@@ -8,6 +8,8 @@
 
 
 
+$( document ).ready(function() {
+    console.log( "ready!" );
 
 var realm = "Kazzak"
 var character_name = "Atrophie"
@@ -37,3 +39,4 @@ console.log(xhr.response);
 };
 $('#myBtn').click(sprawdz());
 
+});
