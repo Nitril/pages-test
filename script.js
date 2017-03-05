@@ -35,5 +35,5 @@ console.log(xhr.response);
 
 
 };
-
+$('#myBtn').click(sprawdz());
 
