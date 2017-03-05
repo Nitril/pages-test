@@ -19,7 +19,7 @@ mydiv = document.getElementById("myBtn");
  if (mydiv) { 
     
  mydiv.addEventListener("click", sprawdz, false);
-}
+};
 function sprawdz() {
 
 var xhr = new XMLHttpRequest();
