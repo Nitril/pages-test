@@ -15,14 +15,11 @@ var character_name = "Atrophie"
 
 const apikey = "7djtrck735sj9vj9kmtdkyxdaqvqm9f9";
 var chlink =  "https://eu.api.battle.net/wow/auction/data/"+realm+ "?locale=en_GB&apikey="+apikey;
-document.getElementById("myBtn").onclick = function() {
-    $('#myBtn').click(sprawdz());
+
+    document.getElementById("#myBtn").click(sprawdz());
 mydiv = document.getElementById("myBtn");
- if (mydiv) { 
-    
- mydiv.addEventListener("click", sprawdz, false);
-};
-sprawdz = function () {
+ 
+var sprawdz = function () {
 
 var xhr = new XMLHttpRequest();
 
@@ -38,5 +35,7 @@ alert('clicked');
 
 };
 
-
-}
+if (mydiv) { 
+    
+ mydiv.addEventListener("click", sprawdz, false);
+};
