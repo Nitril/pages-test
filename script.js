@@ -32,4 +32,4 @@ console.log(xhr.response);
 }
 
 
-document.getElementById("myDiv").addEventListener("click", sprawdz, false);
+document.getElementById("myDiv").addEventListener("click", sprawdz);
