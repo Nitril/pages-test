@@ -17,7 +17,7 @@ const apikey = "7djtrck735sj9vj9kmtdkyxdaqvqm9f9";
 var chlink =  "https://eu.api.battle.net/wow/auction/data/"+realm+ "?locale=en_GB&apikey="+apikey;
 
     mydiv = document.getElementById("myBtn");
- 
+ $(mydiv).on('click', sprawdz);
 var sprawdz = function () {
 
 var xhr = new XMLHttpRequest();
@@ -34,7 +34,7 @@ alert('clicked');
 
 };
 
-if (mydiv) { 
+// if (mydiv) { 
     
- mydiv.addEventListener("click", sprawdz, false);
-};
+//  mydiv.addEventListener("click", sprawdz, false);
+// };
