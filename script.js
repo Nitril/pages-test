@@ -34,7 +34,14 @@ alert(xhr.response);
 console.log(xhr.response);
 alert('clicked');
 
-    }
+getJSON(chlink, function(err, data) {
+  if (err != null) {
+    alert('Something went wrong: ' + err);
+  } else {
+    alert('Your query count: ' + data.query.count);
+  }
+});    }
+
 }
 
 window.onload = sprawdz;
