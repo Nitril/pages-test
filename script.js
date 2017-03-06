@@ -31,7 +31,6 @@ alert(xhr.response);
 console.log(xhr.response);
 alert('clicked');
 
-
 });
 // if (mydiv) { 
     
