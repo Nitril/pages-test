@@ -28,19 +28,12 @@ xhr.open("GET",chlink , false);
 
 xhr.send();
 
-console.log(xhr.status);
-console.log(xhr.statusText);
-alert(xhr.response);
-console.log(xhr.response);
-alert('clicked');
+$.getJSON(chlink, function(data) {
+    //data is the JSON string
+}); 
 
-getJSON(chlink, function(err, data) {
-  if (err != null) {
-    alert('Something went wrong: ' + err);
-  } else {
-    alert('Your query count: ' + data.query.count);
-  }
-});    }
+
+}
 
 }
 
