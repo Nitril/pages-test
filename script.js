@@ -30,7 +30,8 @@ xhr.send();
 
 $.getJSON(chlink, function(data) {
     //data is the JSON string
-    alert(data);
+    alert(data.files.url);
+    alert(data.files.lastModified);
 }); 
 
 
