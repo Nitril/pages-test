@@ -1,0 +1,186 @@
+﻿body {
+    
+    background-color: #FAFAFA;
+    
+    margin: auto;
+}
+h2, h3 {
+    font-weight: 800;
+}
+.container {
+    border-bottom: 1px solid lightgrey;
+    overflow: auto;
+    background-color: #FAFAFA;
+}
+
+#content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 860px;
+}
+
+header {
+    padding: 15px;
+}
+
+nav {
+    float: right;
+    display: inline;
+    
+}
+
+.logo {
+    float: left;
+    
+}
+
+
+nav ul {
+    
+    list-style: none;
+}
+
+nav li {
+    float: right;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: Helvetica;
+    color: deepskyblue;
+    font-size: smaller;
+}
+
+footer {
+    font-family: sans-serif;
+    font-size: smaller;
+    height: 150px;
+    background-color: #252D2F;
+    text-align: center;
+    color:lightslategray;
+    font-weight: 150;
+}
+
+.top {
+    text-align: center;
+    margin-top: 30px;
+    background-color: #FAFAFA;
+}
+
+    .top h1 {
+        font-family: Helvetica;
+        font-weight: 100;
+        color: deepskyblue;
+        font-size: x-large;
+    }
+
+.logo2 {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    
+}
+
+#mid {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
+    background-color: #FAFAFA;
+    
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    background-color: #FAFAFA;
+    font-size: small;
+}
+
+#cont {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    font-family: Helvetica;
+    font-weight: 600;
+}
+
+.topa {
+    float: left;
+    width: 50%;
+    display: inline-block;
+    margin-bottom: 30px;
+    font-family: Helvetica;
+    padding: 10px;
+}
+
+.topa p {
+    font-size: small;
+    font-weight: 500;
+}
+
+.duo {
+    display: flex;
+    border-bottom: 1px solid lightgrey;
+    overflow: auto;
+    
+}
+
+
+.bot {
+    
+    width: 25%;
+    margin: 9px;
+    font-family: Helvetica;
+    display: inline-block;
+
+}
+
+    .bot h3 {
+        border-bottom: 1px solid lightgrey;
+        padding-bottom: 10px;
+        font-size:  20px;
+    }
+
+hr {
+    border: none;
+    height: 10px;
+    background: linear-gradient(-135deg, #fff 5px, transparent 0) 0 5px, linear-gradient(135deg, #fff 5px, #252D2F 0) 0 5px;
+    background-color: #252D2F;
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    background-size: 10px 10px;
+}
+
+#cool p{
+    color:  deepskyblue;
+}
+
+#dwa{
+    
+}
+
+.text {
+
+    text-
+}
+
+#text1{
+    position: absolute;
+    top: 43%;
+    left: 29%;
+    transform: translate(-50%, -70%);
+}
+
+#text2 {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#text3 {
+    position: absolute;
+    top: 43%;
+    left: 71%;
+    transform: translate(-50%, -30%);
+}
