@@ -117,14 +117,7 @@ footer {
 }
 #cont {
     
-    text-align: center;
-    vertical-align: middle;
-    color: deepskyblue;
-    font-size: x-large;
-    font-family: Helvetica;
-    font-weight: 600;
-    display: flex;
-    height: auto;
+    
     
 }
 
@@ -184,28 +177,47 @@ hr {
 }
 #dwa {
 }
+.kolka {
+    
+    
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 auto;
+    overflow-x: hidden;
+    padding: 20px;
+}
 .text {
-    background-color: deepskyblue;
+    display: inline-block ;
     width: 250px;
     height: 250px;
+    background-color: deepskyblue;
     border-radius: 50%;
-    
-    vertical-align: middle;
     color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 250px; 
+    opacity: 0.4;
+    font-size: larger;
+    font-weight: 600;
+    
+    
+
 }
+
 #text1 {
-    
-    
-    
+
+    position: relative;
+    transform: translateX(20%) ;
 }
+
 #text2 {
+    position: absolute;
     
     
-   
 }
 #text3 {
     
-    
+    position: relative;
+    transform: translateX(80%) ;
     
 }
-
