@@ -71,6 +71,9 @@ li.dropdown {
         min-width: 160px;
     }
         .dropdown-content a:hover {
+			
+			background-color: #ddd;
+
             
         }
 .dropdown:hover .dropdown-content {
@@ -180,6 +183,7 @@ hr {
 .kolka {
     
     
+	
     display: flex;
     flex-direction: row;
     flex: 1 0 auto;
@@ -187,6 +191,8 @@ hr {
     padding: 20px;
 }
 .text {
+	margin-top: 20px;
+	margin-bottom: 20px;
     display: inline-block ;
     width: 250px;
     height: 250px;
