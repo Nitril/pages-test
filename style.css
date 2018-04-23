@@ -1,7 +1,5 @@
 ﻿body {
-    
     background-color: #FAFAFA;
-    
     margin: auto;
 }
 h2, h3 {
@@ -12,34 +10,29 @@ h2, h3 {
     overflow: auto;
     background-color: #FAFAFA;
 }
-
 #content {
     margin-left: auto;
     margin-right: auto;
     max-width: 860px;
 }
-
 header {
     padding: 15px;
 }
-
 nav {
     float: right;
     display: inline;
-    
 }
-
 .logo {
     float: left;
-    
 }
-
 
 nav ul {
-    
     list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
 }
-
 nav li {
     float: right;
     padding: 10px;
@@ -48,62 +41,106 @@ nav li {
     color: deepskyblue;
     font-size: smaller;
 }
+li a, .dropbtn {
+    display: inline-block;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+        
+    }
 
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    
+    z-index: 1;
+}
+    .dropdown-content a {
+        color: deepskyblue;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        min-width: 160px;
+    }
+        .dropdown-content a:hover {
+            
+        }
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
 footer {
     font-family: sans-serif;
     font-size: smaller;
     height: 150px;
     background-color: #252D2F;
     text-align: center;
-    color:lightslategray;
+    color: lightslategray;
     font-weight: 150;
 }
-
 .top {
     text-align: center;
     margin-top: 30px;
     background-color: #FAFAFA;
 }
-
     .top h1 {
         font-family: Helvetica;
         font-weight: 100;
         color: deepskyblue;
         font-size: x-large;
     }
-
 .logo2 {
     height: auto;
     width: auto;
     max-width: 100%;
-    
 }
-
 #mid {
     margin-left: auto;
     margin-right: auto;
     display: block;
     margin-top: 30px;
     background-color: #FAFAFA;
-    
 }
-
 .bottom {
     display: flex;
     width: 100%;
     background-color: #FAFAFA;
     font-size: small;
 }
-
 #cont {
-    position: relative;
+    
     text-align: center;
-    color: white;
+    vertical-align: middle;
+    color: deepskyblue;
     font-size: x-large;
     font-family: Helvetica;
     font-weight: 600;
+    display: flex;
+    height: auto;
+    
 }
 
+
+.left {
+    background-color: deepskyblue;
+    display: inline-block;
+}
+.right {
+    background-color: deepskyblue;
+    display: inline-block;
+}
+.inner {
+    background-color: deepskyblue;
+    position: center;
+}
 .topa {
     float: left;
     width: 50%;
@@ -112,35 +149,27 @@ footer {
     font-family: Helvetica;
     padding: 10px;
 }
-
-.topa p {
-    font-size: small;
-    font-weight: 500;
-}
-
+    .topa p {
+        font-size: small;
+        font-weight: 500;
+    }
 .duo {
     display: flex;
     border-bottom: 1px solid lightgrey;
     overflow: auto;
-    
 }
 
-
 .bot {
-    
     width: 25%;
     margin: 9px;
     font-family: Helvetica;
     display: inline-block;
-
 }
-
     .bot h3 {
         border-bottom: 1px solid lightgrey;
         padding-bottom: 10px;
-        font-size:  20px;
+        font-size: 20px;
     }
-
 hr {
     border: none;
     height: 10px;
@@ -150,37 +179,33 @@ hr {
     background-repeat: repeat-x;
     background-size: 10px 10px;
 }
-
-#cool p{
-    color:  deepskyblue;
+#cool p {
+    color: deepskyblue;
 }
-
-#dwa{
+#dwa {
+}
+.text {
+    background-color: deepskyblue;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    
+    vertical-align: middle;
+    color: white;
+}
+#text1 {
+    
+    
+    
+}
+#text2 {
+    
+    
+   
+}
+#text3 {
+    
+    
     
 }
 
-.text {
-
-    text-
-}
-
-#text1{
-    position: absolute;
-    top: 43%;
-    left: 29%;
-    transform: translate(-50%, -70%);
-}
-
-#text2 {
-    position: absolute;
-    top: 43%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#text3 {
-    position: absolute;
-    top: 43%;
-    left: 71%;
-    transform: translate(-50%, -30%);
-}
